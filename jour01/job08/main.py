@@ -10,7 +10,7 @@ class Livre:
         if nbre_pages > 0:
             self.__nbre_pages = nbre_pages
         else:
-            print("EROR")
+            print("ERROR")
         return self.__nbre_pages
 
      
@@ -25,21 +25,24 @@ class Livre:
     def setverifiquation(self, disponible):
         if disponible == True:
             self.__disponible = disponible
-        else:
-            print("Le livre n'est pas disponible")
+        if disponible == False:
             return self.__disponible
         
     def setemprunter(self, disponible):
         if disponible == False:
             self.__disponible = disponible
             print("Indisponible")
+        else:
+            print("disponible")
         
     
     
-livre = Livre(177, "Michel gentil", "L'amour c'est beau")
+livre = Livre(177, "Michel gentil", "L'amour c'est beau", disponible = True)
 
 
 
 print(livre.setnbre_pages(789))
 print(livre.setauteur("Michel Pasgentil"))  
 print(livre.settitre("L'Amour c'est nul"))      
+print(livre.setverifiquation(True))
+print(livre.setemprunter(False))
