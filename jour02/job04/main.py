@@ -20,3 +20,5 @@ print("Aire du rectangle:", aire)
 
 
 
+
+
