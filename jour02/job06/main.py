@@ -63,7 +63,7 @@ print("Modèle :", moto.modele)
 print("Année :", moto.année)
 print("Prix :", moto.prix)
 print("Nombre de roues :", moto.roue)
-moto.demarrer()
+Moto.demarrer()
 
 
 
